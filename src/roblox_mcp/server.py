@@ -164,8 +164,8 @@ async def receive_studio_logs(logs: List[StudioLogEntry], request: Request):
 # --- MCP Server Instance (Handles Tool Definitions) ---
 # Note: We still need the FastMCP instance to register tools to.
 mcp_server = FastMCP(
-    "VibeBlocksMCP", # <<< RENAME
-    description="Roblox Studio integration via MCP (SSE Transport)",
+    name="VibeBlocksMCP", # <<< RENAME
+    instructions="Roblox Studio integration via MCP (SSE Transport)",
 )
 logger.info("FastMCP instance created for tool registration.")
 # --- End MCP Server Instance ---
